@@ -1,10 +1,34 @@
 <!HTML>
 
   <head>
+  <meta charset="utf-8" />
 
-  </head>
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Welcome to Foundation</title>
+  
+  <!-- Included CSS Files (Uncompressed) -->
+  <!--
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  -->
+
+  <link rel="stylesheet" href="stylesheets/style.css">
+  
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="stylesheets/foundation.min.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+
+  <script src="javascripts/modernizr.foundation.js"></script>
+
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
   <body>
-    <div class="header">
+    <div class="header row">
       <h2> some tagline to go below the header image </h2>
       <ul>
         <li>when</li>
@@ -21,7 +45,7 @@
         <li><a href="#"> map and directions </a></li>
       </ul>
     </div>
-    <nav>
+    <nav class="row">
       <ul class="links">
         <li><a href="#"> 62 all </a></li>
         <li><a href="#"> 08 motion </a></li>
@@ -33,7 +57,7 @@
         <li><a href="#"> grid </a></li>
       </ul>
     </nav>
-    <div class="students">
+    <div class="students row">
       <ul>
         <li><a href="#"> Student Name </a></li>
         <li><a href="#"> Student Name </a></li>
@@ -99,7 +123,7 @@
         <li><a href="#"> Student Name </a></li>
       </ul>
     </div>
-    <div class="project-grid">
+    <div class="project-grid row">
       <ul>
         <li class="project-thumb"><a href="#"><img src="#"/></a></li>
         <li class="project-thumb"><a href="#"><img src="#"/></a></li>
@@ -165,21 +189,25 @@
         <li class="project-thumb"><a href="#"><img src="#"/></a></li>
       </ul>
     </div>
-    <div class="project-browse">
+    <div class="project-browse row">
       <ul>
         <li>
-          <img src="#"/>
-          <h1> Student Name </h1>
-          <h3> Project Title </h3>
-          <h2> "Super cool quote" </h2>
-          <p>Bacon ipsum dolor sit amet frankfurter ham hock cow leberkas swine ribeye. Andouille beef ribs t-bone rump, ball tip sirloin short ribs jerky ground round tail tongue salami. Turkey cow turducken chicken strip steak meatball. Pork loin short ribs beef, hamburger tongue turkey shoulder frankfurter rump venison shankle. Pork shoulder short ribs, strip steak ribeye boudin meatball swine frankfurter tenderloin ham hock pancetta. Pork loin pork chop pancetta prosciutto.
-          </br>
-          Meatloaf chuck venison jowl, meatball bresaola pork spare ribs pork chop capicola tri-tip turducken beef ribs shoulder strip steak. Tail pig beef pork chop beef ribs. Rump ground round flank, strip steak hamburger beef ribs cow chicken tri-tip meatball. Hamburger leberkas bresaola, doner short ribs beef ham cow.
-          </p>
+          <div class="seven columns">
+            <img src="#" alt="project-preview" class="do-it"/>
+          </div>
+          <div class="five columns">
+            <h1> Student Name </h1>
+            <h3> Project Title </h3>
+            <h2> "Super cool quote" </h2>
+            <p>Bacon ipsum dolor sit amet frankfurter ham hock cow leberkas swine ribeye. Andouille beef ribs t-bone rump, ball tip sirloin short ribs jerky ground round tail tongue salami. Turkey cow turducken chicken strip steak meatball. Pork loin short ribs beef, hamburger tongue turkey shoulder frankfurter rump venison shankle. Pork shoulder short ribs, strip steak ribeye boudin meatball swine frankfurter tenderloin ham hock pancetta. Pork loin pork chop pancetta prosciutto.
+            </br>
+            Meatloaf chuck venison jowl, meatball bresaola pork spare ribs pork chop capicola tri-tip turducken beef ribs shoulder strip steak. Tail pig beef pork chop beef ribs. Rump ground round flank, strip steak hamburger beef ribs cow chicken tri-tip meatball. Hamburger leberkas bresaola, doner short ribs beef ham cow.
+            </p>
+          </div>
         </li>
       </ul>
     </div>
-    <div class="class-stats">
+    <div class="class-stats row">
       <h1> our journey through communication design </h1>
       <h2> Bacon ipsum dolor sit amet pancetta hamburger t-bone tri-tip pastrami. Short ribs pork belly leberkas jerky venison cow. </h2>
       <div class="graph">

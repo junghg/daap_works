@@ -1,0 +1,58 @@
+/*-------------------------------*/
+/*          NAVIGATION           */
+/*-------------------------------*/
+nav .links{
+  display: inline-block;
+  width: 70%;
+}
+
+nav .sort{
+  display: inline-block;
+  width: 25%;
+}
+
+nav .links li{
+  list-style: none;
+  width: 20%;
+  float: left;
+}
+
+nav .sort li{
+  list-style: none;
+  width: 25%;
+  float: right;
+}
+
+/*-------------------------------*/
+/*         STUDENT LIST          */
+/*-------------------------------*/
+
+.students ul li{
+  list-style: none;
+  width: 20%;
+  float: left;
+}
+
+/*-------------------------------*/
+/*          GRID VIEW            */
+/*-------------------------------*/
+
+.project-thumb{
+  height: 75px;
+  width: 100px;
+  margin: 0 15px 15px 0;
+  float: left;
+  background-color: gray;
+}
+
+
+/*-------------------------------*/
+/*         BROWSE VIEW           */
+/*-------------------------------*/
+
+.project-browse ul li > div img{
+  width: 100%;
+  height: 200px;
+  background: gray;
+}
+

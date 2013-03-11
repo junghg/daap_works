@@ -7,28 +7,17 @@
   <meta name="viewport" content="width=device-width" />
 
   <title>GRCD 2013</title>
+
+  <link rel="stylesheet" href="css/style.css" />
   
-  <!-- Included CSS Files (Uncompressed) -->
-  <!--
-  <link rel="stylesheet" href="stylesheets/foundation.css">
-  -->
-
-  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="css/normalize.css" />
   
-  <!-- Included CSS Files (Compressed) -->
-  <link rel="stylesheet" href="stylesheets/foundation.min.css">
-  <link rel="stylesheet" href="stylesheets/app.css">
+  <link rel="stylesheet" href="css/foundation.min.css" />
+  
 
-  <script src="javascripts/modernizr.foundation.js"></script>
+  <script src="js/vendor/custom.modernizr.js"></script>
 
-  <!-- IE Fix for HTML5 Tags -->
-  <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-
-  <!-- TYPEKIT FONTS -->
-  <script type="text/javascript" src="//use.typekit.net/nya8hzg.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
@@ -38,8 +27,22 @@
   <body>
     <div class="header row">
       <h2> some tagline to go below the header image </h2>
-      <img id="star" alt="star" src="images/star.png"/>
-      <img id="star2" alt="star" src="images/star.png"/>
+      <div id="kaleidoscope">
+        <img id="ring1" alt="ring" src="images/ring/ring_01.png"/>
+        <img id="ring2" alt="ring" src="images/ring/ring_02.png"/>
+        <img id="ring3" alt="ring" src="images/ring/ring_03.png"/>
+        <img id="ring4" alt="ring" src="images/ring/ring_04.png"/>
+        <img id="ring5" alt="ring" src="images/ring/ring_05.png"/>
+        <img id="ring6" alt="ring" src="images/ring/ring_06.png"/>
+        <img id="ring7" alt="ring" src="images/ring/ring_07.png"/>
+        <img id="ring8" alt="ring" src="images/ring/ring_08.png"/>
+        <img id="ring9" alt="ring" src="images/ring/ring_09.png"/>
+        <img id="ring10" alt="ring" src="images/ring/ring_10.png"/>
+        <img id="ring11" alt="ring" src="images/ring/ring_11.png"/>
+        <img id="ring12" alt="ring" src="images/ring/ring_12.png"/>
+        <img id="ring13" alt="ring" src="images/ring/ring_13.png"/>
+        <img id="ring14" alt="ring" src="images/ring/ring_14.png"/>
+      </div>
       <ul>
         <li>whenRyan is super silly</li>
         <li> opens april 23 2013 5-9pm </li>
@@ -228,26 +231,79 @@
   </body>
 
   <script type="text/javascript">
-    var img = $('#star');
-    var img2 = $('#star2')
-    if(img.length > 0){
-      var offset = img.offset();
+    var img1 = $('#ring1');
+    var img2 = $('#ring2');
+    var img3 = $('#ring3');
+    var img5 = $('#ring5');
+    var img6 = $('#ring6');
+    var img8 = $('#ring8');
+    var img9 = $('#ring9');
+    var img10 = $('#ring10');
+    var img12 = $('#ring12');
+    var img14 = $('#ring14');
+    if(img1.length > 0){
+      var offset = img1.offset();
       var offset2 = img2.offset();
       function mouse(evt){
-        var center_x = (offset.left) + (img.width()/2);
-        var center_y = (offset.top) + (img.height()/2);
+        var center_x = (offset.left) + (img1.width()/2);
+        var center_y = (offset.top) + (img1.height()/2);
         var mouse_x = evt.pageX; var mouse_y = evt.pageY;
         var radians = Math.atan2(mouse_x - center_x, mouse_y - center_y);
         var degree = (radians * (180 / Math.PI) * -1) + 90;
         var degree2 = (radians * (180 / Math.PI)); 
-        img.css('-moz-transform', 'rotate('+degree+'deg)');
-        img.css('-webkit-transform', 'rotate('+degree+'deg)');
-        img.css('-o-transform', 'rotate('+degree+'deg)');
-        img.css('-ms-transform', 'rotate('+degree+'deg)');
+        var degree3 = (radians * (180 / Math.PI) * -1) + 180;
+        var degree4 = (radians * (180 / Math.PI)) + 180; 
+        var degree5 = (radians * (180 / Math.PI) * -1) - 90;
+
+        img1.css('-moz-transform', 'rotate('+degree+'deg)');
+        img1.css('-webkit-transform', 'rotate('+degree+'deg)');
+        img1.css('-o-transform', 'rotate('+degree+'deg)');
+        img1.css('-ms-transform', 'rotate('+degree+'deg)');
+
         img2.css('-moz-transform', 'rotate('+degree2+'deg)');
         img2.css('-webkit-transform', 'rotate('+degree2+'deg)');
         img2.css('-o-transform', 'rotate('+degree2+'deg)');
         img2.css('-ms-transform', 'rotate('+degree2+'deg)');
+
+        img3.css('-moz-transform', 'rotate('+degree3+'deg)');
+        img3.css('-webkit-transform', 'rotate('+degree3+'deg)');
+        img3.css('-o-transform', 'rotate('+degree3+'deg)');
+        img3.css('-ms-transform', 'rotate('+degree3+'deg)');
+
+        img5.css('-moz-transform', 'rotate('+degree4+'deg)');
+        img5.css('-webkit-transform', 'rotate('+degree4+'deg)');
+        img5.css('-o-transform', 'rotate('+degree4+'deg)');
+        img5.css('-ms-transform', 'rotate('+degree4+'deg)');
+
+        img6.css('-moz-transform', 'rotate('+degree5+'deg)');
+        img6.css('-webkit-transform', 'rotate('+degree5+'deg)');
+        img6.css('-o-transform', 'rotate('+degree5+'deg)');
+        img6.css('-ms-transform', 'rotate('+degree5+'deg)');
+
+        img8.css('-moz-transform', 'rotate('+degree+'deg)');
+        img8.css('-webkit-transform', 'rotate('+degree+'deg)');
+        img8.css('-o-transform', 'rotate('+degree+'deg)');
+        img8.css('-ms-transform', 'rotate('+degree+'deg)');
+
+        img9.css('-moz-transform', 'rotate('+degree2+'deg)');
+        img9.css('-webkit-transform', 'rotate('+degree2+'deg)');
+        img9.css('-o-transform', 'rotate('+degree2+'deg)');
+        img9.css('-ms-transform', 'rotate('+degree2+'deg)');
+
+        img10.css('-moz-transform', 'rotate('+degree3+'deg)');
+        img10.css('-webkit-transform', 'rotate('+degree3+'deg)');
+        img10.css('-o-transform', 'rotate('+degree3+'deg)');
+        img10.css('-ms-transform', 'rotate('+degree3+'deg)');
+
+        img12.css('-moz-transform', 'rotate('+degree4+'deg)');
+        img12.css('-webkit-transform', 'rotate('+degree4+'deg)');
+        img12.css('-o-transform', 'rotate('+degree4+'deg)');
+        img12.css('-ms-transform', 'rotate('+degree4+'deg)');
+
+        img14.css('-moz-transform', 'rotate('+degree5+'deg)');
+        img14.css('-webkit-transform', 'rotate('+degree5+'deg)');
+        img14.css('-o-transform', 'rotate('+degree5+'deg)');
+        img14.css('-ms-transform', 'rotate('+degree5+'deg)');
       }
       $(document).mousemove(mouse);
     }

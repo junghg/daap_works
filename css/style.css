@@ -1,5 +1,5 @@
 *{
-  font-family: "proxima-nova",sans-serif;
+  font-family: "Lato",sans-serif;
   font-style: normal;
   font-weight: 400;
 }
@@ -13,21 +13,31 @@ ul{
 }
 
 /*-------------------------------*/
+/*            HEADER             */
+/*-------------------------------*/
+
+.header{
+  height: 425px;
+  position: relative;
+  overflow: hidden;
+}
+
+/*-------------------------------*/
 /*          LOGO MARK            */
 /*-------------------------------*/
 
-#star{
+#kaleidoscope{
   position: absolute;
-  left: 70%;
-  height: 200px;
-  width: 200px;
+  right: 0;
+  top: -33%;
+  height: 750px;
+  width: 750px;
 }
 
-#star2{
+#kaleidoscope img{
   position: absolute;
-  left: 75%;
-  height: 200px;
-  width: 200px;
+  top: 0;
+  left: 0;
 }
 
 /*-------------------------------*/

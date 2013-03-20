@@ -1,0 +1,57 @@
+#menus li{
+	list-style:none;
+	float:left;
+	margin:5px;
+}
+
+li.browse_ind{
+	width:14px;
+	height:14px;
+	border-radius:7px;
+	background-color:#000;	
+	
+}
+
+li.browse_ind:hover{
+	background-color:#ccc;	
+}
+
+#thumbs_1, #thumbs_2, #detail_1, #detail_2{
+	width:800px;
+	margin:0 auto;
+}
+
+#thumbs_1 li, #thumbs_2 li{
+	position:relative;
+	list-style:none;
+	float:left;
+	width:100px;
+	height:100px;
+	background-color:#ccc;
+	margin:5px;
+}
+
+#browse_view{
+	position:relative;
+	width:800px;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+#browse_view ul{
+ 	margin:0px;
+ 	padding:0px;
+}
+
+#browse_view li{
+	list-style:none;
+	width:800px;
+	height:200px;
+	margin:20px 0px;
+	border-top:1px solid #000;
+	float:left;
+}
+
+div{
+	clear:both;
+}

@@ -1,0 +1,128 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.browse_ind').hide();
+	
+	$('#grid').click(function(){
+		$('.browse_ind').hide();
+		$('#browse_view').empty();
+	});
+	
+	$('#browse').click(function(){
+		$('.browse_ind').show();	//project index numbers appear.
+		$('li.browse_ind').css("background-color","#000"); 	//change all circels to black.
+		$('.detail').empty();		//remove project detail view if it has been open.
+		$('#browse_view').empty();  //remove project description pages if they have been open.
+		
+		// load project data from data.json file into 'output' variable
+		$('#browse_view').append('<ul class="'+'description' + '">');
+		$.getJSON('data.json', function(data) {
+			$.each(data, function(key, val) {
+			$('.description').append('<li>' + '</li>');
+			$('.description li:last').load(val.link);
+		});
+		
+		}); 
+	}); 
+	
+	// when project index numbers are clicked, selected project is brougt to the top.
+	$('li.browse_ind').click(function(){
+		$('.detail').empty();			//remove project detail view if it has been open.
+		$('li.browse_ind').css("background-color","#000"); 	//change all circels to black
+		$(this).css("background-color","#ccc");				//change the selected circle to gray	
+		
+		var li_hgt = 240;				//200 (height of #browse_view li) + 2*20 (margin #browse_view li)
+		var li_ind = $(this).attr('i');	//retrieve the index number of the clicked list element
+		var m_top = -(li_hgt)*(li_ind)  
+			$('#browse_view ul').animate({marginTop:m_top  +"px"}); 
+		});
+
+	// when thumbnail images are clicked
+	$('#thumbs_1 li').click(function(){
+		$('.detail').empty();			//remove another project detail view if it has been open.
+		
+		var val=$(this).attr('ind');	//retrieve the index number of the clicked list element
+		
+		// load the information about the selected project from data.json file
+		$.getJSON('data.json', function(data) {
+			var output = '<h2>'+ data[val].title +'</h2>';
+			output += '<p>'+ data[val].name +'</p>';
+			output += '<img src="' + data[val].image + '" alt="'+ data[val].name +'" />';
+			output += '<p>'+ data[val].description +'</p>';
+			
+			$('#detail_1').html(output);
+		});
+	});
+	
+	// same with above. 
+	$('#thumbs_2 li').click(function(){
+		$('.detail').empty();
+		
+		var val=$(this).attr('ind');
+		alert(val);
+		
+		$.getJSON('data.json', function(data) {
+			var output = '<h2>'+ data[val].title +'</h2>';
+			output += '<p>'+ data[val].name +'</p>';
+			output += '<img src="' + data[val].image + '" alt="'+ data[val].name +'" />';
+			output += '<p>'+ data[val].description +'</p>';
+			
+			$('#detail_2').html(output);
+		});
+	});
+});
+</script>
+</head>
+
+<body>
+	<div id='menus'>
+	<ul>
+		<li><a href='#' id='grid'>grid</a></li>
+		<li><a href='#' id='browse'>browse</a></li>	
+		<li class='browse_ind' i='0'></li>
+		<li class='browse_ind' i='1'></li>
+		<li class='browse_ind' i='2'></li>
+		<li class='browse_ind' i='3'></li>
+		<li class='browse_ind' i='4'></li>
+		<li class='browse_ind' i='5'></li>
+		<li class='browse_ind' i='6'></li>
+		<li class='browse_ind' i='7'></li>
+		<li class='browse_ind' i='8'></li>
+		<li class='browse_ind' i='9'></li>
+		<li class='browse_ind' i='10'></li>
+		<li class='browse_ind' i='11'></li>
+		<li class='browse_ind' i='12'></li>
+		<li class='browse_ind' i='13'></li>
+	</ul>
+	</div>
+	
+	<div id='thumbnails'>
+	<ul id='thumbs_1'>
+		<li ind='0'></li>
+		<li ind='1'></li>
+		<li ind='2'></li>
+		<li ind='3'></li>
+		<li ind='4'></li>
+		<li ind='5'></li>
+		<li ind='6'></li>
+	</ul>
+	<div class='detail' id='detail_1'></div>
+	
+	<ul id='thumbs_2'>
+		<li ind='7'></li>
+		<li ind='8'></li>
+		<li ind='9'></li>
+		<li ind='10'></li>
+		<li ind='11'></li>
+		<li ind='12'></li>
+		<li ind='13'></li>
+	</ul>
+	<div class='detail' id='detail_2'></div>
+	</div>
+	
+	<div id='browse_view'></div>
+</body>
+</html>

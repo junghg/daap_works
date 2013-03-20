@@ -1,0 +1,100 @@
+[
+  {
+    "name":"student 1",
+    "title":"project title 1",
+    "image":"images/image1.jpg",
+    "description":"project description 1",
+    "link":"projects/project1.html"
+  },
+  {
+    "name":"student 2",
+    "title":"project title 2",
+    "image":"images/image2.jpg",
+    "description":"project description 2",
+    "link":"projects/project2.html"
+  },
+  {
+    "name":"student 3",
+    "title":"project title 3",
+    "image":"images/image3.jpg",
+    "description":"project description 3",
+    "link":"projects/project3.html"
+  },
+  {
+    "name":"student 4",
+    "title":"project title 4",
+    "image":"images/image4.jpg",
+    "description":"project description 4",
+    "link":"projects/project4.html"
+  },
+  {
+    "name":"student 5",
+    "title":"project title 5",
+    "image":"images/image5.jpg",
+    "description":"project description 5",
+    "link":"projects/project5.html"
+  },
+  {
+    "name":"student 6",
+    "title":"project title 6",
+    "image":"images/image6.jpg",
+    "description":"project description 6",
+    "link":"projects/project6.html"
+  },
+  {
+    "name":"student 7",
+    "title":"project title 7",
+    "image":"images/image7.jpg",
+    "description":"project description 7",
+    "link":"projects/project7.html"
+  },
+  {
+    "name":"student 8",
+    "title":"project title 8",
+    "image":"images/image8.jpg",
+    "description":"project description 8",
+    "link":"projects/project8.html"
+  },
+  {
+    "name":"student 9",
+    "title":"project title 9",
+    "image":"images/image9.jpg",
+    "description":"project description 9",
+    "link":"projects/project9.html"
+  },
+  {
+    "name":"student 10",
+    "title":"project title 10",
+    "image":"images/image10.jpg",
+    "description":"project description 10",
+    "link":"projects/project10.html"
+  },
+  {
+    "name":"student 11",
+    "title":"project title 11",
+    "image":"images/image11.jpg",
+    "description":"project description 11",
+    "link":"projects/project11.html"
+  },
+  {
+    "name":"student 12",
+    "title":"project title 12",
+    "image":"images/image12.jpg",
+    "description":"project description 12",
+    "link":"projects/project12.html"
+  },
+  {
+    "name":"student 13",
+    "title":"project title 13",
+    "image":"images/image13.jpg",
+    "description":"project description 13",
+    "link":"projects/project13.html"
+  },
+  {
+    "name":"student 14",
+    "title":"project title 14",
+    "image":"images/image14.jpg",
+    "description":"project description 14",
+    "link":"projects/project14.html"
+  }
+]
